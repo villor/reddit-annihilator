@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "reddit annihilator",
+  "version": "0.1",
+  "author": "Viktor Gustavsson",
+  "content_scripts": [
+    {
+      "matches": ["http://*.reddit.com/*","https://*.reddit.com/*"],
+      "js": ["annihilator.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
